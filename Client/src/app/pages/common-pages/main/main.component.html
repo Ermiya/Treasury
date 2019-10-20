@@ -1,0 +1,169 @@
+<h2>{{ headers.DES }}</h2>
+
+<form class="col-24" nz-form [formGroup]="topForm" role="form">
+  <!-- row 1 -->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="6">
+      <nz-form-item>
+        <nz-form-label [nzSm]="10" [nzXs]="24" nzRequired nzFor="temporary_doc_number">شماره سند موقت </nz-form-label>
+        <nz-form-control [nzSm]="14" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="temporary_doc_number" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 2 -->
+    <div nz-col nzSpan="6">
+      <nz-form-item>
+        <nz-form-label [nzSm]="9" [nzXs]="24" nzRequired nzFor="financial_year">سال مالی</nz-form-label>
+        <nz-form-control [nzSm]="15" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="financial_year" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 3-->
+    <div nz-col nzSpan="6">
+      <nz-form-item>
+        <nz-form-label [nzSm]="9" [nzXs]="24" nzRequired nzFor="status">وضعیت</nz-form-label>
+        <nz-form-control [nzSm]="15" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="status" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <div nz-col nzSpan="3">
+      <button nz-button nzType="primary" (click)="submit()">ثبت سند</button>
+    </div>
+  </div>
+  <!-- row 2-->
+  <div nz-row [nzGutter]="4">
+    <!-- 1-->
+    <div nz-col nzSpan="6">
+      <nz-form-item>
+        <nz-form-label [nzSm]="10" [nzXs]="24" nzRequired nzFor="doc_description">شرح سند</nz-form-label>
+        <nz-form-control [nzSm]="14" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="doc_description" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 2-->
+    <div nz-col nzSpan="6" style=" text-align: center;">
+      <button nz-button nzType="primary" *ngIf="headers.REFRENCE_FLAG == 1" (click)="showModal()">
+        {{ headers.REFRENCE_DES }}
+      </button>
+    </div>
+  </div>
+</form>
+<!-- table grid 1-->
+<nz-table nzBordered [nzPageSize]="10">
+  <thead>
+    <tr>
+      <th colspan="1">ردیف</th>
+      <th colspan="2">علت صدور</th>
+      <th colspan="2">{{ headers.DETAILED_ACCOUNT_TITLE }}</th>
+      <th colspan="2">{{ headers.DETAILED_ACCOUNT_SIDE_TITLE }}</th>
+      <th colspan="1">{{ headers.BANK_NO_TITLE }}</th>
+      <th colspan="1">{{ headers.BANK_DATE_TITLE }}</th>
+      <th colspan="1">مبلغ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 1 -->
+    <tr></tr>
+  </tbody>
+</nz-table>
+
+<form class="col-24" nz-form [formGroup]="middleForm" role="form">
+  <!-- row 1 -->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="6">
+      <nz-form-item>
+        <nz-form-label [nzSm]="9" [nzXs]="24" nzRequired nzFor="cost_in_words">مبلغ به حروف </nz-form-label>
+        <nz-form-control [nzSm]="15" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="cost_in_words" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 2 -->
+    <div nz-col nzSpan="6">
+      <nz-form-item>
+        <nz-form-label [nzSm]="9" [nzXs]="24" nzRequired nzFor="sum">جمع</nz-form-label>
+        <nz-form-control [nzSm]="15" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="sum" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+</form>
+<br />
+<br />
+<nz-modal
+  [(nzVisible)]="isVisible"
+  nzWidth="1080"
+  nzTitle="انتخاب اسناد"
+  [nzFooter]="modalFooter"
+  (nzOnCancel)="handleCancel()"
+>
+  <nz-table nzBordered [nzPageSize]="10">
+    <thead>
+      <tr>
+        <th colspan="1">کد حساب تفصیل</th>
+        <th colspan="1">شرح حساب تفصیل</th>
+        <th colspan="1">شماره سند حسابداری</th>
+        <th colspan="1">تاریخ سند حسابداری</th>
+        <th colspan="1">شماره سند انبار</th>
+        <th colspan="1">تاریخ سند انبار</th>
+        <th colspan="1">مبلغ</th>
+        <th colspan="1">انتخاب</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 1 -->
+      <tr></tr>
+    </tbody>
+  </nz-table>
+  <form class="col-24" nz-form [formGroup]="bottomForm" role="form" style="padding-top: 10px">
+    <!-- row 1 -->
+    <div nz-row [nzGutter]="4">
+      <!-- 1-->
+      <div nz-col nzSpan="3">
+        <button nz-button nzType="primary" (click)="submit()">انتخاب همه</button>
+      </div>
+      <!-- 2-->
+      <div nz-col nzSpan="3">
+        <button nz-button nzType="primary" (click)="submit()">انتخاب همه</button>
+      </div>
+      <!-- 3 -->
+      <div nz-col nzSpan="5">
+        <nz-form-item>
+          <nz-form-label [nzSm]="9" [nzXs]="24" nzRequired nzFor="sum2">حمع مبلغ</nz-form-label>
+          <nz-form-control [nzSm]="15" [nzXs]="24">
+            <nz-input-group>
+              <input nz-input formControlName="sum2" />
+            </nz-input-group>
+          </nz-form-control>
+        </nz-form-item>
+      </div>
+
+      <!-- 4-->
+      <div nz-col nzSpan="3">
+        <button nz-button nzType="primary" (click)="submit()">انتخاب همه</button>
+      </div>
+    </div>
+  </form>
+  <ng-template #modalFooter>
+    <button nz-button nzType="primary" nzClosable="false" (click)="handleCancel()">بازگشت</button>
+  </ng-template>
+</nz-modal>

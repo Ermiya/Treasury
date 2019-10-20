@@ -1,0 +1,249 @@
+<h2>معرفی حساب های بانکی</h2>
+
+<form class="col-24" nz-form role="form" [formGroup]="topForm">
+  <!-- row 1 -->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="bank">
+          بانک
+        </nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <nz-input-group nzCompact>
+            <nz-select style="width: 100%;" formControlName="bank" nzShowSearch>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.active'
+                    | translate
+                "
+                [nzValue]="1"
+              ></nz-option>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.inactive'
+                    | translate
+                "
+                [nzValue]="0"
+              ></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 2 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="branch">
+          شعبه
+        </nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <nz-input-group nzCompact>
+            <nz-select style="width: 100%;" formControlName="branch" nzShowSearch>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.active'
+                    | translate
+                "
+                [nzValue]="1"
+              ></nz-option>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.inactive'
+                    | translate
+                "
+                [nzValue]="0"
+              ></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+  <!-- row 2 -->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="account_type">نوع حساب</nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <nz-input-group nzCompact>
+            <nz-select style="width: 100%;" formControlName="account_type" nzShowSearch>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.active'
+                    | translate
+                "
+                [nzValue]="1"
+              ></nz-option>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.inactive'
+                    | translate
+                "
+                [nzValue]="0"
+              ></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 2 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="account_number">
+          شماره حساب
+        </nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="account_number" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+  <!-- row 3 -->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="sheba_number">
+          شماره شبا
+        </nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="sheba_number" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 2 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="cart_number">
+          شماره کارت
+        </nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="cart_number" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+  <!-- row 4 -->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="detail_acc1">
+          تقصیل
+        </nz-form-label>
+        <nz-form-control [nzSm]="8" [nzXs]="24" style="padding-left: 10px;">
+          <nz-input-group>
+            <input nz-input formControlName="detail_acc1" />
+          </nz-input-group>
+        </nz-form-control>
+
+        <nz-form-control [nzSm]="10" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="detail_acc2" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 2 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="personal1">
+          پرسنلی
+        </nz-form-label>
+        <nz-form-control [nzSm]="8" [nzXs]="24" style="padding-left: 10px;">
+          <nz-input-group>
+            <input nz-input formControlName="personal1" />
+          </nz-input-group>
+        </nz-form-control>
+
+        <nz-form-control [nzSm]="10" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="personal2" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+  <!-- row 5 -->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="opening_date">
+          تاریخ افتتاح
+        </nz-form-label>
+        <nz-form-control [nzSm]="6" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="opening_date" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 2 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="end_date">
+          تاریخ اختتام
+        </nz-form-label>
+        <nz-form-control [nzSm]="6" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="end_date" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+  <!-- row 6 -->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <label nz-checkbox style="padding-top: 11px;" formControlName="company_account" style="padding-right: 17%"
+          >حساب شرکت</label
+        >
+      </nz-form-item>
+    </div>
+    <!-- 2 -->
+    <div nz-col nzSpan="12">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="24" nzRequired nzFor="status">نوع حساب</nz-form-label>
+        <nz-form-control [nzSm]="18" [nzXs]="24">
+          <nz-input-group nzCompact>
+            <nz-select style="width: 100%;" formControlName="status" nzShowSearch>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.active'
+                    | translate
+                "
+                [nzValue]="1"
+              ></nz-option>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.inactive'
+                    | translate
+                "
+                [nzValue]="0"
+              ></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+
+  <!-- | -->
+  <div nz-col nzSpan="3" style="padding-right: 10%">
+    <button nz-button nzType="primary">
+      ثبت
+    </button>
+  </div>
+</form>
+<br />

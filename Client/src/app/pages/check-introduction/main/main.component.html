@@ -1,0 +1,130 @@
+<h2>معرفی دست چک</h2>
+
+<form class="col-24" nz-form [formGroup]="topForm" role="form">
+  <!-- row 1 -->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="5">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="6" nzRequired nzFor="bank">بانک</nz-form-label>
+        <nz-form-control [nzSm]="15" [nzXs]="24">
+          <nz-input-group nzCompact>
+            <nz-select style="width: 200px;" formControlName="bank" nzShowSearch>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.active'
+                    | translate
+                "
+                [nzValue]="1"
+              ></nz-option>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.inactive'
+                    | translate
+                "
+                [nzValue]="0"
+              ></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 2 -->
+    <div nz-col nzSpan="6">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="4" nzRequired nzFor="branch">شعبه</nz-form-label>
+        <nz-form-control [nzSm]="15" [nzXs]="24">
+          <nz-input-group nzCompact>
+            <nz-select style="width: 200px;" formControlName="bank" nzShowSearch>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.active'
+                    | translate
+                "
+                [nzValue]="1"
+              ></nz-option>
+              <nz-option
+                [nzLabel]="
+                  'app.accounting.presenting-detail-account.adding-legal-and-natural-person.suboption.status.inactive'
+                    | translate
+                "
+                [nzValue]="0"
+              ></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+    <!-- 3-->
+    <div nz-col nzSpan="8">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="6" nzRequired nzFor="account_number">شماره حساب</nz-form-label>
+        <nz-form-control [nzSm]="15" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="account_number" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+  <!-- row 2-->
+  <div nz-row [nzGutter]="4">
+    <!-- 1 -->
+    <div nz-col nzSpan="11">
+      <nz-form-item>
+        <nz-form-label [nzSm]="4" [nzXs]="4" nzRequired nzFor="from">شماره چک</nz-form-label>
+        <nz-form-label [nzSm]="2" [nzXs]="2" nzRequired nzFor="from">از</nz-form-label>
+        <nz-form-control [nzSm]="6" [nzXs]="6">
+          <nz-input-group>
+            <input nz-input formControlName="from" />
+          </nz-input-group>
+        </nz-form-control>
+        <nz-form-label [nzSm]="2" [nzXs]="2" nzRequired nzFor="to">تا</nz-form-label>
+        <nz-form-control [nzSm]="6" [nzXs]="6">
+          <nz-input-group>
+            <input nz-input formControlName="to" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <!-- 2-->
+    <div nz-col nzSpan="9">
+      <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="6" nzRequired nzFor="check_number">شماره دسته چک</nz-form-label>
+        <nz-form-control [nzSm]="15" [nzXs]="24">
+          <nz-input-group>
+            <input nz-input formControlName="check_number" />
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+  </div>
+</form>
+
+<!-- table grid 1-->
+<nz-table nzBordered [nzPageSize]="10">
+  <thead>
+    <tr>
+      <th colspan="1">شماره چک</th>
+      <th colspan="1">وضعیت چک</th>
+      <th colspan="1">تاریخ صدور</th>
+      <th colspan="1">تاریخ تحویل</th>
+      <th colspan="1">تاریخ ابطال</th>
+      <th colspan="1">سال مالی / شماره سند حساب داری</th>
+      <th colspan="1">به روزرسانی</th>
+      <th colspan="1">حذف</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 1 -->
+    <!-- <tr>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+    </tr> -->
+  </tbody>
+</nz-table>

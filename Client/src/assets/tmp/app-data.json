@@ -1,0 +1,168 @@
+{
+  "app": {
+    "name": "Alain",
+    "description": "Ng-zorro admin panel front-end framework"
+  },
+  "user": {
+    "name": "Admin",
+    "avatar": "./assets/tmp/img/avatar.jpg",
+    "email": "cipchk@qq.com"
+  },
+  "menu": [
+    {
+      "text": "",
+      "group": false,
+      "i18n": "",
+      "hideInBreadcrumb": true,
+      "children": [
+        {
+          "text": "registration",
+          "i18n": "menu.registration",
+          "icon": "anticon-dashboard",
+          "children": [
+            {
+              "text": "applicants-registration",
+              "link": "/applicants-register",
+              "i18n": "menu.applicants-registration"
+            }
+          ]
+        },
+        {
+          "text": "payment",
+          "i18n": "menu.treasury.payment",
+          "icon": "anticon-dashboard",
+          "children": [
+            {
+              "text": "day-check-payment",
+              "link": "/common/206",
+              "i18n": "menu.treasury.day-check-payment"
+            },
+            {
+              "text": "short-check-payment",
+              "link": "/common/208",
+              "i18n": "menu.treasury.short-check-payment"
+            },
+            {
+              "text": "check-payment",
+              "link": "/common/209",
+              "i18n": "menu.treasury.check-payment"
+            },
+            {
+              "text": "garantee-check-payment",
+              "link": "/common/210",
+              "i18n": "menu.treasury.garantee-check-payment"
+            },
+            {
+              "text": "money-payment",
+              "link": "/common/207",
+              "i18n": "menu.treasury.money-payment"
+            }
+          ]
+        },
+        {
+          "text": "receive",
+          "i18n": "menu.treasury.receive",
+          "icon": "anticon-dashboard",
+          "children": [
+            {
+              "text": "day-check-receive",
+              "link": "/common/205",
+              "i18n": "menu.treasury.day-check-receive"
+            },
+            {
+              "text": "check-receive",
+              "link": "/common/203",
+              "i18n": "menu.treasury.check-receive"
+            },
+            {
+              "text": "sefteh-receive",
+              "link": "/common/202",
+              "i18n": "menu.treasury.sefteh-receive"
+            },
+            {
+              "text": "money-receive",
+              "link": "/common/204",
+              "i18n": "menu.treasury.money-receive"
+            }
+          ]
+        },
+        {
+          "text": "bank-action",
+          "i18n": "menu.treasury.bank-action",
+          "icon": "anticon-dashboard",
+          "children": [
+            {
+              "text": "bank-settel",
+              "link": "/common/211",
+              "i18n": "menu.treasury.bank-settel"
+            },
+            {
+              "text": "bank-get",
+              "link": "/common/212",
+              "i18n": "menu.treasury.bank-get"
+            },
+            {
+              "text": "bank-assain",
+              "link": "/common/213",
+              "i18n": "menu.treasury.bank-assain"
+            },
+            {
+              "text": "check-to-money",
+              "link": "/common/214",
+              "i18n": "menu.treasury.check-to-money"
+            }
+          ]
+        },
+        {
+          "text": "check-converting",
+          "i18n": "menu.treasury.check-converting",
+          "icon": "anticon-dashboard",
+          "children": [
+            {
+              "text": "short-check-convert",
+              "link": "/common/216",
+              "i18n": "menu.treasury.short-check-convert"
+            },
+            {
+              "text": "converting-floating-check-to-daily",
+              "link": "/common/217",
+              "i18n": "menu.treasury.converting-floating-check-to-daily"
+            }
+          ]
+        },
+        {
+          "text": "base-info",
+          "i18n": "menu.treasury.base-info",
+          "icon": "anticon-dashboard",
+          "children": [
+            {
+              "text": "bank-acccounts",
+              "link": "/base-info/bank-acccounts",
+              "i18n": "menu.treasury.bank-acccounts"
+            },
+            {
+              "text": "check-introduction",
+              "link": "/base-info/check-introduction",
+              "i18n": "menu.treasury.check-introduction"
+            },
+            {
+              "text": "document-struct",
+              "link": "/base-info/document-struct",
+              "i18n": "menu.treasury.document-struct"
+            },
+            {
+              "text": "bank-branch",
+              "link": "/base-info/bank-branch",
+              "i18n": "menu.treasury.bank-branch"
+            },
+            {
+              "text": "exchange-rate",
+              "link": "/base-info/exchange-rate",
+              "i18n": "menu.treasury.exchange-rate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

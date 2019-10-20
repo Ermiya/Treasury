@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury_back.Common", "ERP.Treasury_back.Common\ERP.Treasury_back.Common.csproj", "{A8ED081F-174F-444B-A50D-5549FA4BCB6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury_back.Data", "ERP.Treasury_back.Data\ERP.Treasury_back.Data.csproj", "{C1B2A313-9B3E-4447-9324-B20F7732A33A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury_back.Business", "ERP.Treasury_back.Business\ERP.Treasury_back.Business.csproj", "{104309F3-6968-4DE5-839B-F6E70A0E9FD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury_back.Facade", "ERP.Treasury_back.Facade\ERP.Treasury_back.Facade.csproj", "{021BF407-480F-44A0-BC89-AA9F1AD8DA83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury_back.Shared", "ERP.Treasury_back.Shared\ERP.Treasury_back.Shared.csproj", "{F4337D42-1886-44DB-9557-44A0B3612146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury_back.Service.WebApi", "ERP.Treasury_back.Service.WebApi\ERP.Treasury_back.Service.WebApi.csproj", "{082610A0-6336-4982-8075-51F0AF8DABF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8ED081F-174F-444B-A50D-5549FA4BCB6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8ED081F-174F-444B-A50D-5549FA4BCB6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8ED081F-174F-444B-A50D-5549FA4BCB6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8ED081F-174F-444B-A50D-5549FA4BCB6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B2A313-9B3E-4447-9324-B20F7732A33A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B2A313-9B3E-4447-9324-B20F7732A33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B2A313-9B3E-4447-9324-B20F7732A33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B2A313-9B3E-4447-9324-B20F7732A33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{104309F3-6968-4DE5-839B-F6E70A0E9FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{104309F3-6968-4DE5-839B-F6E70A0E9FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{104309F3-6968-4DE5-839B-F6E70A0E9FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{104309F3-6968-4DE5-839B-F6E70A0E9FD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{021BF407-480F-44A0-BC89-AA9F1AD8DA83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{021BF407-480F-44A0-BC89-AA9F1AD8DA83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{021BF407-480F-44A0-BC89-AA9F1AD8DA83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{021BF407-480F-44A0-BC89-AA9F1AD8DA83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4337D42-1886-44DB-9557-44A0B3612146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4337D42-1886-44DB-9557-44A0B3612146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4337D42-1886-44DB-9557-44A0B3612146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4337D42-1886-44DB-9557-44A0B3612146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082610A0-6336-4982-8075-51F0AF8DABF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082610A0-6336-4982-8075-51F0AF8DABF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082610A0-6336-4982-8075-51F0AF8DABF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082610A0-6336-4982-8075-51F0AF8DABF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9176532B-D9A2-4746-870C-FBEE5B6F40C1}
+	EndGlobalSection
+EndGlobal
