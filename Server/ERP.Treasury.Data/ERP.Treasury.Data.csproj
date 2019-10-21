@@ -80,6 +80,14 @@
     <Compile Include="Migrations\201910211213297_v3.Designer.cs">
       <DependentUpon>201910211213297_v3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910211906186_Add_bank.cs" />
+    <Compile Include="Migrations\201910211906186_Add_bank.Designer.cs">
+      <DependentUpon>201910211906186_Add_bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910211913577_update_bank_1.cs" />
+    <Compile Include="Migrations\201910211913577_update_bank_1.Designer.cs">
+      <DependentUpon>201910211913577_update_bank_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -98,6 +106,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910211213297_v3.resx">
       <DependentUpon>201910211213297_v3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910211906186_Add_bank.resx">
+      <DependentUpon>201910211906186_Add_bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910211913577_update_bank_1.resx">
+      <DependentUpon>201910211913577_update_bank_1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

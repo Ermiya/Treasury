@@ -27,5 +27,6 @@ namespace ERP.Treasury.Data.Contexts
         }
         public virtual DbSet<Document_types> Document_types { get; set; }
         public virtual DbSet<Tax> Taxes { get; set; }
+        public virtual DbSet<Bank> Banks { get; set; }
     }
 }

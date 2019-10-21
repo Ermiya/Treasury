@@ -14,14 +14,14 @@ namespace ERP.Treasury.Service.WebApi.Controllers
     public class TaxController : ApiController
     {
         [HttpGet, Route("")]
-        public OperationResult<List<TaxGetDto>> Select() => Controller.SelectTax(QueryOptions);
+        public OperationResult<List<BankDto>> Select() => Controller.SelectTax(QueryOptions);
         [HttpGet, Route("{id}")]
-        public OperationResult<TaxGetDto> Get(int id) => Controller.GetTaxById(id);
+        public OperationResult<BankDto> Get(int id) => Controller.GetTaxById(id);
         [HttpPost, Route("")]
-        public OperationResult<TaxGetDto> Add([FromBody] TaxAddDto obj) => Controller.AddTax(obj);
+        public OperationResult<BankDto> Add([FromBody] TaxAddDto obj) => Controller.AddTax(obj);
         [HttpPatch, Route("{id}")]
-        public OperationResult<TaxGetDto> Change(int id, [FromBody] TaxChangeDto obj) => Controller.ChangeTax(id, obj);
+        public OperationResult<BankDto> Change(int id, [FromBody] TaxChangeDto obj) => Controller.ChangeTax(id, obj);
         [HttpDelete, Route("{id}")]
-        public OperationResult<TaxGetDto> Remove(int id) => Controller.RemoveTax(id);
+        public OperationResult<BankDto> Remove(int id) => Controller.RemoveTax(id);
     }
 }

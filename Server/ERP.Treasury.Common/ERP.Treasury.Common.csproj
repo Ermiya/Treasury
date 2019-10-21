@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Bank.cs" />
     <Compile Include="Entities\Document_types.cs" />
     <Compile Include="Entities\Tax.cs" />
     <Compile Include="Interfaces\IDataAdapter.cs" />

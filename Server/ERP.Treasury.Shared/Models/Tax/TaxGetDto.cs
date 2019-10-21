@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ERP.Treasury.Shared.Models.Tax
 {
-    public class TaxGetDto
+    public class BankDto
     {
         public int Id { get; set; }
         public short Year { get; set; }
