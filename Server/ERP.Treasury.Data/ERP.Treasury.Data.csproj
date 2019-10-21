@@ -90,12 +90,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ERP.Treasury_back.Common\ERP.Treasury.Common.csproj">
-      <Project>{A8ED081F-174F-444B-A50D-5549FA4BCB6A}</Project>
-      <Name>ERP.Treasury.Common</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Migrations\201910210544002_v1.resx">
       <DependentUpon>201910210544002_v1.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +99,12 @@
     <EmbeddedResource Include="Migrations\201910211213297_v3.resx">
       <DependentUpon>201910211213297_v3.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ERP.Treasury.Common\ERP.Treasury.Common.csproj">
+      <Project>{a8ed081f-174f-444b-a50d-5549fa4bcb6a}</Project>
+      <Name>ERP.Treasury.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

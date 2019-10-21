@@ -132,20 +132,20 @@
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ERP.Treasury_back.Business\ERP.Treasury.Business.csproj">
-      <Project>{104309F3-6968-4DE5-839B-F6E70A0E9FD3}</Project>
+    <ProjectReference Include="..\ERP.Treasury.Business\ERP.Treasury.Business.csproj">
+      <Project>{104309f3-6968-4de5-839b-f6e70a0e9fd3}</Project>
       <Name>ERP.Treasury.Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Common\ERP.Treasury.Common.csproj">
-      <Project>{A8ED081F-174F-444B-A50D-5549FA4BCB6A}</Project>
+    <ProjectReference Include="..\ERP.Treasury.Common\ERP.Treasury.Common.csproj">
+      <Project>{a8ed081f-174f-444b-a50d-5549fa4bcb6a}</Project>
       <Name>ERP.Treasury.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Data\ERP.Treasury.Data.csproj">
-      <Project>{C1B2A313-9B3E-4447-9324-B20F7732A33A}</Project>
+    <ProjectReference Include="..\ERP.Treasury.Data\ERP.Treasury.Data.csproj">
+      <Project>{c1b2a313-9b3e-4447-9324-b20f7732a33a}</Project>
       <Name>ERP.Treasury.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Shared\ERP.Treasury.Shared.csproj">
-      <Project>{F4337D42-1886-44DB-9557-44A0B3612146}</Project>
+    <ProjectReference Include="..\ERP.Treasury.Shared\ERP.Treasury.Shared.csproj">
+      <Project>{f4337d42-1886-44db-9557-44a0b3612146}</Project>
       <Name>ERP.Treasury.Shared</Name>
     </ProjectReference>
   </ItemGroup>

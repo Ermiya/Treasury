@@ -142,16 +142,16 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ERP.Treasury_back.Common\ERP.Treasury.Common.csproj">
-      <Project>{A8ED081F-174F-444B-A50D-5549FA4BCB6A}</Project>
+    <ProjectReference Include="..\ERP.Treasury.Common\ERP.Treasury.Common.csproj">
+      <Project>{a8ed081f-174f-444b-a50d-5549fa4bcb6a}</Project>
       <Name>ERP.Treasury.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Facade\ERP.Treasury.Facade.csproj">
+    <ProjectReference Include="..\ERP.Treasury.Facade\ERP.Treasury.Facade.csproj">
       <Project>{021bf407-480f-44a0-bc89-aa9f1ad8da83}</Project>
       <Name>ERP.Treasury.Facade</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Shared\ERP.Treasury.Shared.csproj">
-      <Project>{F4337D42-1886-44DB-9557-44A0B3612146}</Project>
+    <ProjectReference Include="..\ERP.Treasury.Shared\ERP.Treasury.Shared.csproj">
+      <Project>{f4337d42-1886-44db-9557-44a0b3612146}</Project>
       <Name>ERP.Treasury.Shared</Name>
     </ProjectReference>
   </ItemGroup>

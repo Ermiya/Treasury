@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Common", "ERP.Treasury_back.Common\ERP.Treasury.Common.csproj", "{A8ED081F-174F-444B-A50D-5549FA4BCB6A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Common", "ERP.Treasury.Common\ERP.Treasury.Common.csproj", "{A8ED081F-174F-444B-A50D-5549FA4BCB6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Data", "ERP.Treasury_back.Data\ERP.Treasury.Data.csproj", "{C1B2A313-9B3E-4447-9324-B20F7732A33A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Data", "ERP.Treasury.Data\ERP.Treasury.Data.csproj", "{C1B2A313-9B3E-4447-9324-B20F7732A33A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Business", "ERP.Treasury_back.Business\ERP.Treasury.Business.csproj", "{104309F3-6968-4DE5-839B-F6E70A0E9FD3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Business", "ERP.Treasury.Business\ERP.Treasury.Business.csproj", "{104309F3-6968-4DE5-839B-F6E70A0E9FD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Facade", "ERP.Treasury_back.Facade\ERP.Treasury.Facade.csproj", "{021BF407-480F-44A0-BC89-AA9F1AD8DA83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Facade", "ERP.Treasury.Facade\ERP.Treasury.Facade.csproj", "{021BF407-480F-44A0-BC89-AA9F1AD8DA83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Shared", "ERP.Treasury_back.Shared\ERP.Treasury.Shared.csproj", "{F4337D42-1886-44DB-9557-44A0B3612146}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Shared", "ERP.Treasury.Shared\ERP.Treasury.Shared.csproj", "{F4337D42-1886-44DB-9557-44A0B3612146}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Service.WebApi", "ERP.Treasury_back.Service.WebApi\ERP.Treasury.Service.WebApi.csproj", "{082610A0-6336-4982-8075-51F0AF8DABF3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Treasury.Service.WebApi", "ERP.Treasury.Service.WebApi\ERP.Treasury.Service.WebApi.csproj", "{082610A0-6336-4982-8075-51F0AF8DABF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
