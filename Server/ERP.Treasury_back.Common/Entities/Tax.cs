@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERP.Treasury_back.Common.Entities
+namespace ERP.Treasury.Common.Entities
 {
     [Table("TAXTABLE ")]
     public class Tax : Entity, IAudited

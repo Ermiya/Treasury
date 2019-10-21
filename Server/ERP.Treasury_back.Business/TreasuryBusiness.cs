@@ -1,16 +1,16 @@
-﻿using ERP.Treasury_back.Common.Interfaces;
+﻿using ERP.Treasury.Common.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERP.Treasury_back.Business
+namespace ERP.Treasury.Business
 {
-    public partial class Treasury_backBusiness
+    public partial class TreasuryBusiness
     {
         private IDataAdapter adapter;   
-        public Treasury_backBusiness(IDataAdapter adapter)
+        public TreasuryBusiness(IDataAdapter adapter)
         {
             this.adapter = adapter;
         }

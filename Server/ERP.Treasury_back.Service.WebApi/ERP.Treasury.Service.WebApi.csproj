@@ -43,14 +43,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bitspco.Framework, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.1.0.3\lib\netstandard2.0\Bitspco.Framework.dll</HintPath>
+    <Reference Include="Bitspco.Framework, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.1.2.0\lib\netstandard2.0\Bitspco.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Logger, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Logger.1.0.3\lib\netstandard2.0\Bitspco.Framework.Logger.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Logger, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Logger.1.2.0\lib\netstandard2.0\Bitspco.Framework.Logger.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Net.Service.WebApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Net.Service.WebApi.1.0.0\lib\net461\Bitspco.Framework.Net.Service.WebApi.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Net, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Net.1.2.0\lib\net461\Bitspco.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Bitspco.Framework.Net.Service.WebApi, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Net.Service.WebApi.1.2.0\lib\net461\Bitspco.Framework.Net.Service.WebApi.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -139,17 +142,17 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ERP.Treasury_back.Common\ERP.Treasury_back.Common.csproj">
+    <ProjectReference Include="..\ERP.Treasury_back.Common\ERP.Treasury.Common.csproj">
       <Project>{A8ED081F-174F-444B-A50D-5549FA4BCB6A}</Project>
-      <Name>ERP.Treasury_back.Common</Name>
+      <Name>ERP.Treasury.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Facade\ERP.Treasury_back.Facade.csproj">
+    <ProjectReference Include="..\ERP.Treasury_back.Facade\ERP.Treasury.Facade.csproj">
       <Project>{021bf407-480f-44a0-bc89-aa9f1ad8da83}</Project>
-      <Name>ERP.Treasury_back.Facade</Name>
+      <Name>ERP.Treasury.Facade</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Shared\ERP.Treasury_back.Shared.csproj">
+    <ProjectReference Include="..\ERP.Treasury_back.Shared\ERP.Treasury.Shared.csproj">
       <Project>{F4337D42-1886-44DB-9557-44A0B3612146}</Project>
-      <Name>ERP.Treasury_back.Shared</Name>
+      <Name>ERP.Treasury.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

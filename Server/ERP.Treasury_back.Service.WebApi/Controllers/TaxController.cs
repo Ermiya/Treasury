@@ -1,13 +1,14 @@
 ﻿using Bitspco.Framework.Domain;
-using ERP.Treasury_back.Shared.Models.Tax;
+using ERP.Treasury.Shared.Models.Tax;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Bitspco.Framework.Common;
 
-namespace ERP.Treasury_back.Service.WebApi.Controllers
+namespace ERP.Treasury.Service.WebApi.Controllers
 {
     [RoutePrefix("Tax")]
     public class TaxController : ApiController

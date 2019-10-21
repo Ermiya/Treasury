@@ -5,14 +5,14 @@ namespace ERP.Treasury_back.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ERP.Treasury_back.Data.Contexts.TreasuryDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ERP.Treasury.Data.Contexts.TreasuryDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(ERP.Treasury_back.Data.Contexts.TreasuryDbContext context)
+        protected override void Seed(ERP.Treasury.Data.Contexts.TreasuryDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

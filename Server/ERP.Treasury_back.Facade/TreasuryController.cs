@@ -8,11 +8,11 @@ using Bitspco.Framework.Filters.Security.IP;
 using Bitspco.Framework.Filters.Security.Models;
 using Bitspco.Framework.Net.Logger.Contexts;
 using Bitspco.Framework.Net.Filters.Security;
-using ERP.Treasury_back.Business;
-using ERP.Treasury_back.Common.Interfaces;
-using ERP.Treasury_back.Data;
-using ERP.Treasury_back.Data.Contexts;
-using ERP.Treasury_back.Facade.Filters;
+using ERP.Treasury.Business;
+using ERP.Treasury.Common.Interfaces;
+using ERP.Treasury.Data;
+using ERP.Treasury.Data.Contexts;
+using ERP.Treasury.Facade.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +23,7 @@ using System.Net.Http;
 using AutoMapper;
 using Bitspco.Framework.Common.Query;
 
-namespace ERP.Treasury_back.Facade
+namespace ERP.Treasury.Facade
 {
     public partial class TreasuryController
     {
@@ -39,7 +39,7 @@ namespace ERP.Treasury_back.Facade
         public string MapExtension { get { return ".jpg"; } }
 
         private IDataAdapter adapter;
-        private Treasury_backBusiness business;
+        private TreasuryBusiness business;
 
         private Authenticator auth;
         private AuthFilter authFilter = new AuthFilter();
@@ -49,13 +49,13 @@ namespace ERP.Treasury_back.Facade
         private IPFilter ipFilter = new IPFilter();
         private FilterCollection<IFilter> filters = new FilterCollection<IFilter>();
 
-        private Treasury_backBusiness Business
+        private TreasuryBusiness Business
         {
             get
             {
                 if (business == null)
                 {
-                    business = new Treasury_backBusiness(Adapter);
+                    business = new TreasuryBusiness(Adapter);
                 }
                 return business;
             }
@@ -71,7 +71,8 @@ namespace ERP.Treasury_back.Facade
 
         public TreasuryController()
         {
-            filters.Add(authFilter);
+            //filters.Add(authFilter);
+            securityFilter.Filters.Add(authFilter);
             filters.Add(logFilter);
 
             antiDosFilter.AttributeEnable = true;
@@ -106,6 +107,6 @@ namespace ERP.Treasury_back.Facade
         public R Change<T, R, Q>(object id, Q obj) where T : class => Run(() => Adapter.Update(Mapper.Map(obj, Adapter.GetById<T>(id))), saveChanges: true).Then(Mapper.Map<R>).Result;
         public R Remove<T, R>(object id) where T : class => Run(() => Adapter.Delete(Adapter.GetById<T>(id)), saveChanges: true).Then(Mapper.Map<R>).Result;
 
-        public T GetById2<T>(object id) where T : class => Run(() => Adapter.GetById<T>(id)).Result;
+       public R GetById2<T, R>(object id) where T : class => Run(() => Adapter.GetById<T>(id)).Then(Mapper.Map<R>).Result;
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERP.Treasury_back.Shared.Models.Tax
+namespace ERP.Treasury.Shared.Models.Tax
 {
     public class TaxChangeDto
     {

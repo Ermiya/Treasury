@@ -1,4 +1,4 @@
-﻿using ERP.Treasury_back.Common.Entities;
+﻿using ERP.Treasury.Common.Entities;
 using System;
 using System.Collections.Generic;
 using System.Data.Common;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERP.Treasury_back.Data.Contexts
+namespace ERP.Treasury.Data.Contexts
 {
     public class TreasuryDbContext : DbContext
     {
@@ -22,8 +22,10 @@ namespace ERP.Treasury_back.Data.Contexts
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             Database.SetInitializer<TreasuryDbContext>(null);
+            modelBuilder.HasDefaultSchema("Accounting");
             base.OnModelCreating(modelBuilder);
         }
         public virtual DbSet<Document_types> Document_types { get; set; }
+        public virtual DbSet<Tax> Taxes { get; set; }
     }
 }

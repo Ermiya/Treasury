@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERP.Treasury_back.Common.Interfaces
+namespace ERP.Treasury.Common.Interfaces
 {
     public interface IDataAdapter : Bitspco.Framework.Domain.Interfaces.IDataAdapter
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{021BF407-480F-44A0-BC89-AA9F1AD8DA83}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ERP.Treasury_back.Facade</RootNamespace>
-    <AssemblyName>ERP.Treasury_back.Facade</AssemblyName>
+    <RootNamespace>ERP.Treasury.Facade</RootNamespace>
+    <AssemblyName>ERP.Treasury.Facade</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -34,53 +34,53 @@
     <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.1.0.3\lib\netstandard2.0\Bitspco.Framework.dll</HintPath>
+    <Reference Include="Bitspco.Framework, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.1.2.0\lib\netstandard2.0\Bitspco.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Filters, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Filters.1.0.3\lib\netstandard2.0\Bitspco.Framework.Filters.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Filters, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Filters.1.2.0\lib\netstandard2.0\Bitspco.Framework.Filters.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Filters.ErrorHandler, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Filters.ErrorHandler.1.0.3\lib\netstandard2.0\Bitspco.Framework.Filters.ErrorHandler.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Filters.ErrorHandler, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Filters.ErrorHandler.1.2.1\lib\netstandard2.0\Bitspco.Framework.Filters.ErrorHandler.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Filters.Logger, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Filters.Logger.1.0.3\lib\netstandard2.0\Bitspco.Framework.Filters.Logger.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Filters.Logger, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Filters.Logger.1.2.0\lib\netstandard2.0\Bitspco.Framework.Filters.Logger.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Filters.Security, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Filters.Security.1.0.3\lib\netstandard2.0\Bitspco.Framework.Filters.Security.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Filters.Security, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Filters.Security.1.2.0\lib\netstandard2.0\Bitspco.Framework.Filters.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Filters.Security.AntiDos, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Filters.Security.AntiDos.1.0.3\lib\netstandard2.0\Bitspco.Framework.Filters.Security.AntiDos.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Filters.Security.AntiDos, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Filters.Security.AntiDos.1.2.0\lib\netstandard2.0\Bitspco.Framework.Filters.Security.AntiDos.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Filters.Security.Authentication, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Filters.Security.Authentication.1.0.3\lib\netstandard2.0\Bitspco.Framework.Filters.Security.Authentication.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Filters.Security.Authentication, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Filters.Security.Authentication.1.2.1\lib\netstandard2.0\Bitspco.Framework.Filters.Security.Authentication.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Filters.Security.IP, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Filters.Security.IP.1.0.3\lib\netstandard2.0\Bitspco.Framework.Filters.Security.IP.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Filters.Security.IP, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Filters.Security.IP.1.2.0\lib\netstandard2.0\Bitspco.Framework.Filters.Security.IP.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Logger, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Logger.1.0.3\lib\netstandard2.0\Bitspco.Framework.Logger.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Logger, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Logger.1.2.0\lib\netstandard2.0\Bitspco.Framework.Logger.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Net, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Net.1.0.0\lib\net461\Bitspco.Framework.Net.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Net, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Net.1.2.0\lib\net461\Bitspco.Framework.Net.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Net.Filters, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Net.Filters.1.0.0\lib\net461\Bitspco.Framework.Net.Filters.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Net.Filters, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Net.Filters.1.2.0\lib\net461\Bitspco.Framework.Net.Filters.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Net.Filters.Security, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Net.Filters.Security.1.0.2\lib\net461\Bitspco.Framework.Net.Filters.Security.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Net.Filters.Security, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Net.Filters.Security.1.2.0\lib\net461\Bitspco.Framework.Net.Filters.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Net.Filters.Security.AntiDos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Net.Filters.Security.AntiDos.1.0.0\lib\net461\Bitspco.Framework.Net.Filters.Security.AntiDos.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Net.Filters.Security.AntiDos, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Net.Filters.Security.AntiDos.1.2.0\lib\net461\Bitspco.Framework.Net.Filters.Security.AntiDos.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Net.Filters.Security.Authentication, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Net.Filters.Security.Authentication.1.0.0\lib\net461\Bitspco.Framework.Net.Filters.Security.Authentication.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Net.Filters.Security.Authentication, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Net.Filters.Security.Authentication.1.2.0\lib\net461\Bitspco.Framework.Net.Filters.Security.Authentication.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Net.Filters.Security.IP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Net.Filters.Security.IP.1.0.0\lib\net461\Bitspco.Framework.Net.Filters.Security.IP.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Net.Filters.Security.IP, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Net.Filters.Security.IP.1.2.0\lib\net461\Bitspco.Framework.Net.Filters.Security.IP.dll</HintPath>
     </Reference>
-    <Reference Include="Bitspco.Framework.Net.Logger, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Bitspco.Framework.Net.Logger.1.1.0\lib\net461\Bitspco.Framework.Net.Logger.dll</HintPath>
+    <Reference Include="Bitspco.Framework.Net.Logger, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bitspco.Framework.Net.Logger.1.2.0\lib\net461\Bitspco.Framework.Net.Logger.dll</HintPath>
     </Reference>
     <Reference Include="Bitspco.Framework.Net.Security.AntiDos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bitspco.Framework.Net.Security.AntiDos.1.0.0\lib\net461\Bitspco.Framework.Net.Security.AntiDos.dll</HintPath>
@@ -132,21 +132,21 @@
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ERP.Treasury_back.Business\ERP.Treasury_back.Business.csproj">
+    <ProjectReference Include="..\ERP.Treasury_back.Business\ERP.Treasury.Business.csproj">
       <Project>{104309F3-6968-4DE5-839B-F6E70A0E9FD3}</Project>
-      <Name>ERP.Treasury_back.Business</Name>
+      <Name>ERP.Treasury.Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Common\ERP.Treasury_back.Common.csproj">
+    <ProjectReference Include="..\ERP.Treasury_back.Common\ERP.Treasury.Common.csproj">
       <Project>{A8ED081F-174F-444B-A50D-5549FA4BCB6A}</Project>
-      <Name>ERP.Treasury_back.Common</Name>
+      <Name>ERP.Treasury.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Data\ERP.Treasury_back.Data.csproj">
+    <ProjectReference Include="..\ERP.Treasury_back.Data\ERP.Treasury.Data.csproj">
       <Project>{C1B2A313-9B3E-4447-9324-B20F7732A33A}</Project>
-      <Name>ERP.Treasury_back.Data</Name>
+      <Name>ERP.Treasury.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ERP.Treasury_back.Shared\ERP.Treasury_back.Shared.csproj">
+    <ProjectReference Include="..\ERP.Treasury_back.Shared\ERP.Treasury.Shared.csproj">
       <Project>{F4337D42-1886-44DB-9557-44A0B3612146}</Project>
-      <Name>ERP.Treasury_back.Shared</Name>
+      <Name>ERP.Treasury.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

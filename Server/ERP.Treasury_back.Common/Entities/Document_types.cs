@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ERP.Treasury_back.Common.Entities
+namespace ERP.Treasury.Common.Entities
 {
     [Table("Document_types")]
     public class Document_types 
