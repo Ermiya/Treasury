@@ -68,10 +68,17 @@
   <ItemGroup>
     <Compile Include="Contexts\Treasury_backDbContext.cs" />
     <Compile Include="DataAdapter.cs" />
+    <Compile Include="Migrations\201910210544002_v1.cs" />
+    <Compile Include="Migrations\201910210544002_v1.Designer.cs">
+      <DependentUpon>201910210544002_v1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +86,11 @@
       <Project>{A8ED081F-174F-444B-A50D-5549FA4BCB6A}</Project>
       <Name>ERP.Treasury_back.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910210544002_v1.resx">
+      <DependentUpon>201910210544002_v1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

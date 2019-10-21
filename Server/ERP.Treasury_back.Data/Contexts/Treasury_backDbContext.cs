@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace ERP.Treasury_back.Data.Contexts
 {
-    public class PayrollDbContext : DbContext
+    public class TreasuryDbContext : DbContext
     {
 
-        public PayrollDbContext() : base("name=Default") { }
-        public PayrollDbContext(string connectionString) : base(DbProviderFactories.GetFactory("System.Data.SqlClient").CreateConnection(), true)
+        public TreasuryDbContext() : base("data source=(localdb)\\MSSQLLocalDB;initial catalog=Treasury;Integrated Security=SSPI;MultipleActiveResultSets=True;App=EntityFramework") { }
+        public TreasuryDbContext(string connectionString) : base(DbProviderFactories.GetFactory("System.Data.SqlClient").CreateConnection(), true)
         {
             Database.Connection.ConnectionString = connectionString;
             Configuration.ProxyCreationEnabled = true;
@@ -21,7 +21,7 @@ namespace ERP.Treasury_back.Data.Contexts
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            Database.SetInitializer<PayrollDbContext>(null);
+            Database.SetInitializer<TreasuryDbContext>(null);
             base.OnModelCreating(modelBuilder);
         }
         public virtual DbSet<Document_types> Document_types { get; set; }

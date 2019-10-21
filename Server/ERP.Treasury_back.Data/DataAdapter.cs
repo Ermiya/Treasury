@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace ERP.Treasury_back.Data
 {
-    public class DataAdapter : LoggerDataAdapter<PayrollDbContext>, IDataAdapter
+    public class DataAdapter : LoggerDataAdapter<TreasuryDbContext>, IDataAdapter
     {
-        public DataAdapter(PayrollDbContext payrollDbContext, LoggerDbContext loggerDbContext) : base(payrollDbContext, loggerDbContext)
+        public DataAdapter(TreasuryDbContext payrollDbContext, LoggerDbContext loggerDbContext) : base(payrollDbContext, loggerDbContext)
         {
 
         }

@@ -31,8 +31,8 @@ namespace ERP.Treasury_back.Facade
         {
             get
             {
-                return "data source=192.168.4.10;initial catalog=FraSanaat;persist security info=True;user id=sa;password=ali_1350;MultipleActiveResultSets=True;App=EntityFramework";
-              //  return "data source=192.168.4.10;initial catalog=FraSanaat;persist security info=True;user id=sa;MultipleActiveResultSets=True;App=EntityFramework";
+               // return "data source=192.168.4.10;initial catalog=FraSanaat;persist security info=True;user id=sa;password=ali_1350;MultipleActiveResultSets=True;App=EntityFramework";
+                return "data source=(localdb)\\MSSQLLocalDB;initial catalog=Treasury;Integrated Security=SSPI;MultipleActiveResultSets=True;App=EntityFramework";
 
             }
         }
@@ -65,7 +65,7 @@ namespace ERP.Treasury_back.Facade
             get
             {
                 if (adapter != null) return adapter;
-                return adapter = new DataAdapter(new PayrollDbContext(ConnectionString), new LoggerDbContext(ConnectionString));
+                return adapter = new DataAdapter(new TreasuryDbContext(ConnectionString), new LoggerDbContext(ConnectionString));
             }
         }
 
