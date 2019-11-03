@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace ERP.Treasury.Facade.Mappers
 {
-    class AutoMapperConfig
+    public static class AutoMapperConfig
     {
-        public void Config()
+        public static void Config()
         {
             Mapper.Initialize(cfg =>
             {
@@ -25,7 +25,7 @@ namespace ERP.Treasury.Facade.Mappers
                 cfg.CreateMap<Bank, BankGetDto>();
 
 
-              
+
 
             });
         }

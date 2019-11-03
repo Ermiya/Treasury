@@ -1,3 +1,4 @@
+using ERP.Treasury.Facade.Mappers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace ERP.Treasury_back.Service.WebApi
         protected void Application_Start()
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            AutoMapperConfig.Config();
         }
     }
 }

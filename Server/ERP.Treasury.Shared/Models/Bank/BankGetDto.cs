@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace ERP.Treasury.Shared.Models
 {
-    public class BankGetDto: Entity
+    public class BankGetDto
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public bool Status { get; set; }
         public DateTime CreationTime { get; set; }

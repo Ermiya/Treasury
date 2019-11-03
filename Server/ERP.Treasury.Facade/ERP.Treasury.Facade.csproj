@@ -122,6 +122,7 @@
     <Compile Include="Controllers\TaxController.cs" />
     <Compile Include="Filters\Authenticator.cs" />
     <Compile Include="Filters\Logger.cs" />
+    <Compile Include="Mappers\MapperProfile.cs" />
     <Compile Include="TreasuryController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
