@@ -1,11 +1,11 @@
 using System.Web.Http;
 using WebActivatorEx;
-using ERP.Treasury_back.Service.WebApi;
+using ERP.Treasury.Service.WebApi;
 using Swashbuckle.Application;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace ERP.Treasury_back.Service.WebApi
+namespace ERP.Treasury.Service.WebApi
 {
     public class SwaggerConfig
     {
@@ -32,7 +32,7 @@ namespace ERP.Treasury_back.Service.WebApi
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
                         //
-                        c.SingleApiVersion("v1", "ERP.Treasury_back.Service.WebApi");
+                        c.SingleApiVersion("v1", "ERP.Treasury.Service.WebApi");
 
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //

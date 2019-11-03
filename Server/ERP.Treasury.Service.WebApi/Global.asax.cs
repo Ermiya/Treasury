@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Routing;
 
-namespace ERP.Treasury_back.Service.WebApi
+namespace ERP.Treasury.Service.WebApi
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

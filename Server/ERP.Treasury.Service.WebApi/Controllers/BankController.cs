@@ -8,6 +8,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Bitspco.Framework.Common;
 using ERP.Treasury.Shared.Models;
+using ERP.Treasury.Shared.Models.Bank;
 
 namespace ERP.Treasury.Service.WebApi.Controllers
 {
@@ -18,8 +19,8 @@ namespace ERP.Treasury.Service.WebApi.Controllers
         public OperationResult<List<BankGetDto>> Select() => Controller.SelectBank(QueryOptions);
         [HttpGet, Route("{id}")]
         public OperationResult<BankGetDto> Get(int id) => Controller.GetBankById(id);
-        //[HttpPost, Route("")]
-        //public OperationResult<BankDto> Add([FromBody] TaxAddDto obj) => Controller.AddTax(obj);
+        [HttpPost, Route("")]
+        public OperationResult<BankGetDto> Add([FromBody] BankAddDto obj) => Controller.AddBank(obj);
         //[HttpPatch, Route("{id}")]
         //public OperationResult<BankDto> Change(int id, [FromBody] TaxChangeDto obj) => Controller.ChangeTax(id, obj);
         //[HttpDelete, Route("{id}")]

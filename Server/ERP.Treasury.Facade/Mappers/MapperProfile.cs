@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ERP.Treasury.Common.Entities;
 using ERP.Treasury.Shared.Models;
+using ERP.Treasury.Shared.Models.Bank;
 using System;
 using System.Collections.Generic;
 using System.Linq;

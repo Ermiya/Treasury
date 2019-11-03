@@ -22,6 +22,8 @@ using System.Web;
 using System.Net.Http;
 using AutoMapper;
 using Bitspco.Framework.Common.Query;
+using ERP.Treasury.Shared.Models.Bank;
+using ERP.Treasury.Common.Entities;
 
 namespace ERP.Treasury.Facade
 {
@@ -107,6 +109,11 @@ namespace ERP.Treasury.Facade
         public R Change<T, R, Q>(object id, Q obj) where T : class => Run(() => Adapter.Update(Mapper.Map(obj, Adapter.GetById<T>(id))), saveChanges: true).Then(Mapper.Map<R>).Result;
         public R Remove<T, R>(object id) where T : class => Run(() => Adapter.Delete(Adapter.GetById<T>(id)), saveChanges: true).Then(Mapper.Map<R>).Result;
 
+        //public BankGetDto Insert(BankAddDto bankAddDto)
+        //{
+        //    Bank entity = Mapper.Map<(bankAddDto,BankAddDto, Bank);
+        //    //Adapter.Insert<Bank>()
+        //}
        public R GetById2<T, R>(object id) where T : class => Run(() => Adapter.GetById<T>(id)).Then(Mapper.Map<R>).Result;
     }
 }

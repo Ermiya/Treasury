@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ERP.Treasury.Common.Entities;
 using ERP.Treasury.Shared.Models;
+using ERP.Treasury.Shared.Models.Bank;
 using ERP.Treasury.Shared.Models.CommonPages;
 using ERP.Treasury.Shared.Models.Tax;
 using System;
@@ -19,15 +20,30 @@ namespace ERP.Treasury.Facade.Mappers
             {
                 cfg.AllowNullCollections = true;
                 cfg.CreateMap<Document_types, ParrametersForFormConstractionDto>();
-                cfg.CreateMap<Tax, BankDto>();
+
+                cfg.CreateMap<Tax, TaxGetDto>();
                 cfg.CreateMap<TaxAddDto, Tax>();
                 cfg.CreateMap<TaxChangeDto, Tax>();
+
                 cfg.CreateMap<Bank, BankGetDto>();
+                cfg.CreateMap<BankGetDto, Bank>();
+                cfg.CreateMap<BankAddDto, Bank>();
+                cfg.CreateMap<Bank, BankAddDto>();
 
 
 
 
             });
+        }
+
+        public static TEntity ToEntity<TEntity, TDto>(this TDto dto)
+        {
+            return AutoMapper.Mapper.Map<TDto, TEntity>(dto);
+        }
+
+        public static TDto ToDto<TEntity, TDto>(this TEntity entity)
+        {
+            return AutoMapper.Mapper.Map<TEntity, TDto>(entity);
         }
     }
 }

@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Bank\BankAddDto.cs" />
     <Compile Include="Models\Bank\BankGetDto.cs" />
     <Compile Include="Models\CommonPages\ParrametersForFormConstractionDto.cs" />
     <Compile Include="Models\Tax\TaxAddDto.cs" />

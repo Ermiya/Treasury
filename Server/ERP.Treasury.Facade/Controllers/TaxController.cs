@@ -11,12 +11,12 @@ namespace ERP.Treasury.Facade
 {
     public partial class TreasuryController
     {
-        public List<BankDto> SelectTax(QueryOptions options) => Select<Tax, BankDto>(options);
-        public List<BankDto> GetAllTax() => GetAll<Tax, BankDto>();
-        public BankDto GetTaxById(object id) => GetById<Tax, BankDto>(id);
-        public BankDto AddTax(TaxAddDto obj) => Add<Tax, BankDto, TaxAddDto>(obj);
-        public BankDto ChangeTax(object id, TaxChangeDto obj) => Change<Tax, BankDto, TaxChangeDto>(id, obj);
-        public BankDto RemoveTax(object id) => Remove<Tax, BankDto>(id);
+        public List<TaxGetDto> SelectTax(QueryOptions options) => Select<Tax, TaxGetDto>(options);
+        public List<TaxGetDto> GetAllTax() => GetAll<Tax, TaxGetDto>();
+        public TaxGetDto GetTaxById(object id) => GetById<Tax, TaxGetDto>(id);
+        public TaxGetDto AddTax(TaxAddDto obj) => Add<Tax, TaxGetDto, TaxAddDto>(obj);
+        public TaxGetDto ChangeTax(object id, TaxChangeDto obj) => Change<Tax, TaxGetDto, TaxChangeDto>(id, obj);
+        public TaxGetDto RemoveTax(object id) => Remove<Tax, TaxGetDto>(id);
 
 
     }

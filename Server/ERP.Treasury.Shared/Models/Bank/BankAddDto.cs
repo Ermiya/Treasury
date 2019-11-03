@@ -1,5 +1,4 @@
-﻿using Bitspco.Framework.Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ERP.Treasury.Shared.Models.Bank
 {
-    public class BankGetDto
+    public class BankAddDto
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public bool Status { get; set; }
         public DateTime CreationTime { get; set; }
+
     }
 }

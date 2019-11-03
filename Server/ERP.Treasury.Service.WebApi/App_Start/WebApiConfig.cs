@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
-namespace ERP.Treasury_back.Service.WebApi
+namespace ERP.Treasury.Service.WebApi
 {
     public static class WebApiConfig
     {
