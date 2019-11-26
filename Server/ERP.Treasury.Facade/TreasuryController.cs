@@ -67,17 +67,18 @@ namespace ERP.Treasury.Facade
             get
             {
                 if (adapter != null) return adapter;
-                return adapter = new DataAdapter(new TreasuryDbContext(ConnectionString), new LoggerDbContext(ConnectionString));
+                //return adapter = new DataAdapter(new TreasuryDbContext(ConnectionString), new LoggerDbContext(ConnectionString));
+                return adapter = new DataAdapter(new TreasuryDbContext(ConnectionString));
             }
         }
 
         public TreasuryController()
         {
             //filters.Add(authFilter);
-            securityFilter.Filters.Add(authFilter);
             filters.Add(logFilter);
 
             antiDosFilter.AttributeEnable = true;
+            securityFilter.Filters.Add(authFilter);
             securityFilter.Filters.Add(antiDosFilter);
             securityFilter.Filters.Add(ipFilter);
 
@@ -99,6 +100,7 @@ namespace ERP.Treasury.Facade
             T result = default(T);
             filters.BeginExecute(frameBack: 2, arguments: arguments);
             try { result = func(); }
+            catch (Exception e) { throw; }
             finally { filters.EndExecute(); if (saveChanges) Adapter.SaveChanges(); }
             return new Promise<T>(result);
         }

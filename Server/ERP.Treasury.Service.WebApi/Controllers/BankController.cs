@@ -20,10 +20,20 @@ namespace ERP.Treasury.Service.WebApi.Controllers
         [HttpGet, Route("{id}")]
         public OperationResult<BankGetDto> Get(int id) => Controller.GetBankById(id);
         [HttpPost, Route("")]
-        public OperationResult<BankGetDto> Add([FromBody] BankAddDto obj) => Controller.AddBank(obj);
-        //[HttpPatch, Route("{id}")]
-        //public OperationResult<BankDto> Change(int id, [FromBody] TaxChangeDto obj) => Controller.ChangeTax(id, obj);
-        //[HttpDelete, Route("{id}")]
-        //public OperationResult<BankDto> Remove(int id) => Controller.RemoveTax(id);
+        public OperationResult<BankGetDto> Add([FromBody] BankAddDto obj)
+        //public BankGetDto Add([FromBody] BankAddDto obj)
+        {
+
+            obj.Validate().ThrowIfHasInnerException();
+            //ex.ThrowIfHasInnerException();
+
+
+            return Controller.AddBank(obj);
+
+        }
+        [HttpPatch, Route("{id}")]
+        public OperationResult<BankGetDto> Change(int id, [FromBody] BankAddDto obj) => Controller.ChangeBank(id, obj);
+        [HttpDelete, Route("{id}")]
+        public OperationResult<BankGetDto> Remove(int id) => Controller.RemoveBank(id);
     }
 }
